@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Flag and Capital</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="score">Counter: <%= counter %></div>
+    <div class="formBox">
+        <h1>Random Flag and Capital</h1>
+        <h2>what is the country ot the capital of <%= flag %> flag</h2>
+       
+
+        <form id="countryForm" action="/submit" method="post">
+            <h2>Enter a Country or Capital Name</h2>
+            <input type="hidden" name="capital" value="<%= capital %>">
+            <input type="hidden" name="country" value="<%= country %>">
+            <input type="text" id="countryName" name="countryName">
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
